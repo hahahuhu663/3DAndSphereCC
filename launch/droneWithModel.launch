@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find hector_quadrotor_gazebo)/worlds/animated_box.world"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotors.launch" />
+
+  <!-- <include file="$(find hector_quadrotor_gazebo)/launch/odom_d1.launch" />
+  <include file="$(find hector_quadrotor_gazebo)/launch/odom_d2.launch" />
+  <include file="$(find hector_quadrotor_gazebo)/launch/odom_d3.launch" />
+  <include file="$(find hector_quadrotor_gazebo)/launch/odom_d4.launch" />
+  <include file="$(find hector_quadrotor_gazebo)/launch/odom_d5.launch" />
+  <include file="$(find hector_quadrotor_gazebo)/launch/odom_d6.launch" />
+  <include file="$(find hector_quadrotor_gazebo)/launch/odom_d7.launch" />
+  <include file="$(find hector_quadrotor_gazebo)/launch/odom_d8.launch" />
+
+    <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.gazebo.xacro"/>
+  <node name="rqt_graph" pkg="rqt_graph" type="rqt_graph" output="screen" /> -->
+</launch>

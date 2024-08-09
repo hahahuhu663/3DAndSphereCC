@@ -1,0 +1,457 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+   <world name="default">
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+      <include>
+         <uri>model://ground_plane</uri>
+      </include>
+      <include>
+         <uri>model://sun</uri>
+         <pose>0 0 60 0 0 0</pose>
+      </include>
+      <!-- PIPES -->
+      <model name="pipe1">
+        <pose>-10 -10 0 0 0 0</pose>
+        <link name="pipe1_link">
+          <collision name="pipe1_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe1">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>      
+      <model name="pipe2">
+        <pose>-10 -10 5 0 0 0</pose>
+        <link name="pipe2_link">
+          <collision name="pipe2_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe2">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>      
+      <model name="pipe3">
+        <pose>-10 -10 10 0 0 0</pose>
+        <link name="pipe3_link">
+          <collision name="pipe3_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe3">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <model name="pipe4">
+        <pose>-10 -10 15 0 0 0</pose>
+        <link name="pipe4_link">
+          <collision name="pipe4_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe4">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <model name="pipe5">
+        <pose>-10 -10 20 0 0 0</pose>
+        <link name="pipe5_link">
+          <collision name="pipe5_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe5">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <model name="pipe6">
+        <pose>-10 -10 25 0 0 0</pose>
+        <link name="pipe6_link">
+          <collision name="pipe6_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe6">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <model name="pipe7">
+        <pose>-10 -10 30 0 0 0</pose>
+        <link name="pipe7_link">
+          <collision name="pipe7_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe7">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>   
+      <model name="pipe8">
+        <pose>-10 -10 35 0 0 0</pose>
+        <link name="pipe8_link">
+          <collision name="pipe8_collision">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="pipe8">
+            <geometry>
+              <mesh>
+                <uri>file://straightTrioPipe.dae</uri>
+                <scale>1 1 1.667</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>                     
+      <!-- CRATES' stack -->
+      <model name="crate1">
+        <pose>12.5 12.5 0 0 0 0</pose>
+        <link name="crate1_link">     
+          <collision name="crate1_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate1">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+      <static>true</static>
+    </model>
+    <model name="crate2">
+      <pose>12.5 12.5 5 0 0 0</pose>
+      <link name="crate2_link">
+        <collision name="crate2_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate2">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate3">
+      <pose>7.5 7.5 5 0 0 0</pose>
+      <link name="crate3_link">
+        <collision name="crate3_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate3">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate4">
+      <pose>7.5 7.5 0 0 0 0</pose>
+      <link name="crate4_link">
+        <collision name="crate4_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate4">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate5">
+      <pose>12.5 7.5 5 0 0 0</pose>
+      <link name="crate5_link">
+        <collision name="crate5_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate5">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate6">
+      <pose>12.5 7.5 0 0 0 0</pose>
+      <link name="crate6_link">
+        <collision name="crate6_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate6">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate7">
+      <pose>7.5 12.5 5 0 0 0</pose>
+      <link name="crate7_link">
+        <collision name="crate7_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate7">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate8">
+      <pose>7.5 12.5 0 0 0 0</pose>
+      <link name="crate8_link">
+        <collision name="crate8_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate8">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate9">
+      <pose>10 10 10 0 0 0</pose>
+      <link name="crate9_link">
+        <collision name="crate9_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate9">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <!-- CRATES -->
+    <model name="crate10">
+      <pose>-7 -7 0 0 0 0</pose>
+      <link name="crate10_link">
+        <collision name="crate10_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate10">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    <model name="crate11">
+      <pose>10 -10 0 0 0 0</pose>
+      <link name="crate11_link">
+        <collision name="crate11_collision">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="crate11">
+          <geometry>
+            <mesh>
+              <uri>file://Wooden_Crate.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+   </world>
+</sdf>
+
+

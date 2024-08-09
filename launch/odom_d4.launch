@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="odom_d4" pkg="hector_quadrotor_gazebo" type="odom_d4.py" output="screen" />	
+</launch>

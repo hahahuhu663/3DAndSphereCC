@@ -1,0 +1,389 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+   <world name="default">
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+      <include>
+         <uri>model://ground_plane</uri>
+      </include>
+      <include>
+         <uri>model://sun</uri>
+         <pose>0 0 60 0 0 0</pose>
+      </include>
+      <!-- bigcrate1 -->
+      <model name="crate1">
+        <pose>-15 5 0 0 0 0</pose>
+        <link name="crate1_link">
+          <collision name="crate1_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate1">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>      
+      <model name="crate2">
+        <pose>-15 -5 0 0 0 0</pose>
+        <link name="crate2_link">
+          <collision name="crate2_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate2">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>            
+      <model name="crate3">
+        <pose>-15 0 10 0 0 0</pose>
+        <link name="crate3_link">
+          <collision name="crate3_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate3">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>        
+      <model name="crate4">
+        <pose>-15 -15 0 0 0 0</pose>
+        <link name="crate4_link">
+          <collision name="crate4_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate4">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <!-- bigcrate2 -->
+      <model name="crate5">
+        <pose>-15 -10 10 0 0 0</pose>
+        <link name="crate5_link">
+          <collision name="crate5_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate5">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>      
+      <model name="crate6">
+        <pose>-15 -5 20 0 0 0</pose>
+        <link name="crate6_link">
+          <collision name="crate6_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate6">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>            
+      <model name="crate7">
+        <pose>-5 -15 0 0 0 0</pose>
+        <link name="crate7_link">
+          <collision name="crate7_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate7">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>        
+      <model name="crate8">
+        <pose>-5 -15 10 0 0 0</pose>
+        <link name="crate8_link">
+          <collision name="crate8_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate8">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model> 
+      <!-- bigcrate3 -->
+      <model name="crate9">
+        <pose>5 -15 0 0 0 0</pose>
+        <link name="crate9_link">
+          <collision name="crate9_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate9">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>      
+      <model name="crate10">
+        <pose>15 -15 0 0 0 0</pose>
+        <link name="crate10_link">
+          <collision name="crate10_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate10">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>            
+      <model name="crate11">
+        <pose>15 -15 10 0 0 0</pose>
+        <link name="crate11_link">
+          <collision name="crate11_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate11">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>        
+      <model name="crate12">
+        <pose>5 15 0 0 0 0</pose>
+        <link name="crate12_link">
+          <collision name="crate12_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate12">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>          
+      <!-- bigcrate4 -->
+      <model name="crate13">
+        <pose>5 15 10 0 0 0</pose>
+        <link name="crate13_link">
+          <collision name="crate13_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate13">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>      
+      <model name="crate14">
+        <pose>15 5 0 0 0 0</pose>
+        <link name="crate14_link">
+          <collision name="crate14_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate14">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>            
+      <model name="crate15">
+        <pose>15 5 10 0 0 0</pose>
+        <link name="crate15_link">
+          <collision name="crate15_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate15">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>        
+      <model name="crate16">
+        <pose>5 15 20 0 0 0</pose>
+        <link name="crate16_link">
+          <collision name="crate16_collision">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="crate16">
+            <geometry>
+              <mesh>
+                <uri>file://Wooden_Crate.dae</uri>
+                <scale>2 2 2</scale>
+              </mesh>
+            </geometry>
+            <cast_shadows>false</cast_shadows>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>            
+   </world>
+</sdf>
+
+
