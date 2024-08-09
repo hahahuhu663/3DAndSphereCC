@@ -6,9 +6,9 @@
 - Tess (Python) (https://github.com/wackywendell/tess)
 - Hector Quadrotor (Optional) (https://github.com/RAFALAMAO/hector-quadrotor-noetic.git)
 
-##Explanation
-#3D CVT
-
+## Explanation
+# 3D CVT
+Use ```8_drone_cbf_cvt.py```
 
 ## How To
 1. Put "scripts" folder into your ROS project folder inside the workspace folder.
