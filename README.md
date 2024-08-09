@@ -2,7 +2,7 @@
 - ROS Noetic Ninjemys 
 - Gazebo
 - Python 3
-- Cython
+- Cython (need for Tess)
 - Tess (Python) (https://github.com/wackywendell/tess)
 - Hector Quadrotor (Optional) (https://github.com/RAFALAMAO/hector-quadrotor-noetic.git)
 
