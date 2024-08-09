@@ -11,8 +11,13 @@
  Match the agents used in ```8_drone_cbf_cvt.py``` to name setup on Gazebo. Obstacles' positions are set in this file so please edit them when using it. The CVT and CBF properties are defined in ```voronoiAndBarrier.py```, and ```voronoiAndBarrierV2.py``` are prototype for super-ellipsoidal CBF. Plotting and graphing scripts are in 
 ```plot_scripts```. 
 
-1. Put ```scripts``` folder into your ROS project folder inside the workspace folder.
-2. Use
+1. Put ```scripts``` and ```launch```folder into your ROS project folder inside the workspace folder.
+2. Put ```hector_gazebo_worlds``` in your world folder.
+3. Launch the robots and Gazebo
+```sh
+roslaunch [your folder] quadrotor_crate_symmetry.launch
+```
+4. Run the script
 ```sh
 rosrun [your folder] 8_drone_cbf_cvt.py
 ```
