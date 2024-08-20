@@ -28,3 +28,5 @@ or run it directly after the gazebo is launch.
 
 ## Prototypes
 Python scripts in ```python-test-project```, just run them directly. There are parameterized version of CVT with density function and super-ellipsoid CBF.
+
+Example: ```hayashivoronoi.py``` run a CVT with density function by using line integration functions. This example is remade based on the description from 2D Voronoi Coverage Control with Gaussian Density Functions by Line Integration from Naoki Hayashi et al. (https://www.tandfonline.com/doi/abs/10.9746/jcmsi.10.110)
